@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #17181f;
+  color: #ddd;
+}
+
+main {
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+form {
+  border: 2px solid #30313D;
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+}
+
+form input[type="text"] {
+  background: none;
+  color: #fff;
+  border: 0;
+  padding: 3px;
+  margin-right: 10px;
+  width: 100%;
+}
+
+form button {
+  background-color: #32e783;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit_button {
+  width: 23px;
+}
+
+.todo_list {
+  background-color: #30313D;
+  border-radius: 10px;
+  padding: 5px 9px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  transition: opacity .3s linear;
+}
+
+.delete_btn {
+  margin-left: auto;
+}
+
+.delete_btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: .3s;
+  background-color: #30313D;
+  border-style: none;
+  margin-left: auto;
+}
+
+.delete_btn:hover {
+  transform: scale(1.2);
+  transition: .3s;
+}
+
+.delete_btn>svg {
+  color: #32e783;
+  background-color: #30313D;
+  border-radius: 15px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+}
+
+.delete_btn:focus svg {
+  opacity: 0;
+  transition: .3s;
+}
+
+.checked {
+  opacity: 0.3;
+}
