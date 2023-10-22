@@ -27,10 +27,9 @@ const App = () => {
   }, [includeChar, includeNum, range]);
 
   const copyPassword = useCallback(() => {
-    passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0, 20);
+    passwordRef.current.select();
     window.navigator.clipboard.writeText(password);
-  }, []);
+  }, [password]);
 
   return (
     <main>
